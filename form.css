@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; /* Asegura que el cuerpo ocupe toda la altura */
+}
+
+html {
+    height: 100%; /* Asegura que el HTML ocupe toda la altura */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.menu-icon {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 250px;
+            cursor: pointer;
+			color: 	#C9A4D6;
+			font-size: 30px;
+        }
+.menu-container {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin-top: 0px; /* Espacio superior según sea necesario */
+}
+
+.menu-a {
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 10px;
+}
+
+.menu-item {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu-item a {
+    color: #333;
+    text-decoration: none;
+}
+
+#titulo {
+            font-size: 10em;
+            text-align: center-left;
+			margin-top: 10px;
+            margin-bottom: 200px;
+            color: #BF38DA;
+            font-weight: bold;
+        }
+.titulob {
+    font-size: 10em;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #845dde;
+    font-weight: bold;
+}
+#redes-sociales {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 2px; /* Espacio entre los iconos y el borde inferior */
+    margin-right: 200px; /* Espacio entre los iconos y el borde derecho */
+}
+
+#redes-sociales a {
+	display: inline-block; /* Para que los iconos estén en línea horizontalmente */
+    margin-left: 10px; /* Espacio entre los iconos */
+}
+#titulo1 {
+            font-size: 36px;
+            text-align: center;
+			margin-top: 5px;
+            margin-bottom: 20px;
+            color: #5396de;
+            font-weight: bold;
+        }
+#titulo2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #845dde;
+            font-weight: bold;
+        }
+.container {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+.row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0 -10px;
+        }
+.cuadro-container {
+            width: calc(33.33% - 20px);
+            margin: 0 10px 20px;
+        }
+.titulo-cuadro {
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+            color: #845dde;
+        }
+.cuadro {
+            border: 1px solid #ccc;
+			border-color:#845dde;
+            padding: 10px;
+            text-align: justify;
+            box-sizing: border-box;
+			max-width: 380px;
+            overflow: auto;
+        }
+.row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
