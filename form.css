@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
     height: 100%; /* Asegura que el cuerpo ocupe toda la altura */
 }
@@ -56,15 +55,24 @@ html {
     color: #333;
     text-decoration: none;
 }
-
 #titulo {
+    font-size: 10em;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 20px; /* Aumenta el margen izquierdo */
+    color: #BF38DA;
+    font-weight: bold;
+}
+
+#tituload {
             font-size: 10em;
-            text-align: center-left;
+            text-align: center;
 			margin-top: 10px;
             margin-bottom: 200px;
-            color: #BF38DA;
+            color: #845dde;
             font-weight: bold;
-        }
+        }		
 .titulob {
     font-size: 10em;
     text-align: center;
@@ -86,13 +94,14 @@ html {
     margin-left: 10px; /* Espacio entre los iconos */
 }
 #titulo1 {
-            font-size: 36px;
-            text-align: center;
-			margin-top: 5px;
-            margin-bottom: 20px;
-            color: #5396de;
-            font-weight: bold;
-        }
+    font-size: 36px;
+    text-align: left;
+    margin-top: 55px;
+    margin-bottom: 10px;
+    margin-left: 220px; /* Ajuste del margen izquierdo */
+    color: #5396de;
+    font-weight: bold;
+}
 #titulo2 {
             font-size: 36px;
             text-align: center;
@@ -115,6 +124,7 @@ html {
 .cuadro-container {
             width: calc(33.33% - 20px);
             margin: 0 10px 20px;
+			background-color: #D8D7D3; /* Agregar color de fondo */
         }
 .titulo-cuadro {
             font-size: 17px;
@@ -137,8 +147,159 @@ html {
             display: table;
             clear: both;
         }
-img {
-            width: 100%;
-            height: auto;
-            display: block;
+.vertical-titles {
+            display: flex;
+			justify-content: center;
+            height: 20vh; /* Para ocupar toda la altura de la ventana */
+			margin-top: 50px; /* Separación desde la parte superior */
         }
+.vertical-title {
+            font-size: 24px;
+            margin: 10px; /* Añadir margen entre los títulos */
+        }
+.vertical-title:first-child {
+	font-size: 40px; /* Reducir el tamaño de la letra */
+    margin-right: 400px; /* Separación entre el primer título y el segundo */
+	font-weight: bold;
+    color: #BF38DA	
+}
+.vertical-title:nth-child(2) {
+    margin-left: 20px; /* Separación entre el segundo título y el primero */
+    font-weight: bold;
+    color: #5396de;
+	font-size: 40px; /* Reducir el tamaño de la letra */
+}
+.matrix-table {
+    margin-top: 20px; /* Espacio entre el título y la tabla */
+    border-collapse: collapse; /* Para fusionar los bordes de las celdas */
+    width: auto; /* Ancho automático basado en el contenido */
+	margin-left: 250px; /* Mover la tabla hacia la derecha */
+	color: #845dde;
+	font-size: 15px; /* Reducir el tamaño de la letra */
+}
+.matrix-table th,
+.matrix-table td {
+    border: 1px solid black; /* Borde de las celdas */
+    padding: 8px; /* Espaciado interno de las celdas */
+    text-align: center; /* Alinear contenido al centro */
+}
+.matrix2 {
+	margin-left: 1000px; /* Mover la tabla hacia la derecha */
+    margin-top: -220px; /* Espacio entre el título y la tabla */
+    border-collapse: collapse; /* Para fusionar los bordes de las celdas */
+    width: auto; /* Ancho automático basado en el contenido */
+    color: #845dde;
+	font-size: 15px; /* Reducir el tamaño de la letra */
+}
+.matrix2 th,
+.matrix2 td {
+    border: 1px solid black; /* Borde de las celdas */
+    padding: 8px; /* Espaciado interno de las celdas */
+    text-align: center; /* Alinear contenido al centro */
+}
+.reporte-container {
+    padding: 10px; /* Reducir el padding */
+    text-align: center;
+}
+.cuadro2 {
+    background-color: #BF38DA;
+	color: white;
+    border: 1px solid black;
+	border-radius: 5px;
+    padding: 1px;
+	margin-left: -1000px;
+	display: inline-block;
+	font-size: 8px; /* Reducir el tamaño de la letra */
+}
+#vertical {
+            font-size: 48px; /* Reducir el tamaño de la letra */
+			display: flex;
+			justify-content: left;
+			margin-top: 150px; /* Separación desde la parte superior */
+            margin-left: 100px; /* Mover la tabla hacia la derecha */
+		}
+#vertical-1 {
+	        justify-content: right;
+            display: flex;
+			margin-left: 20px; /* Mover la tabla hacia la derecha */
+        }
+#vertical-2 {
+	        justify-content: right;
+            display: flex;
+			margin-left: 10px; /* Mover la tabla hacia la derecha */		
+        }
+#cuadro3 {
+    background-color: #BF38DA;
+	color: white;
+	border-radius: 5px;
+    padding: 1px;
+	margin-left: 10px;
+	font-size: 8px; /* Reducir el tamaño de la letra */
+	}
+#cuadro4 {
+    background-color:;
+	color: black;
+    border: 1px solid black;
+	border-radius: 5px;
+    padding: 1px;
+	margin-left: 10px;
+	display: inline-block;
+	font-size: 8px; /* Reducir el tamaño de la letra */
+	}
+#tituto{
+width: 311px;
+height: 77px;
+top: 110px;
+left: 94px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 64px;
+font-weight: 700;
+line-height: 77.45px;
+text-align: left;
+color:  #7D53DE;
+}
+
+#parrafo {width: 400px;
+height: 140px;
+top: 362px;
+left: 835px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.94px;
+text-align: left;
+color: #757272;}
+
+.cta-button {
+  background-color: #7D53DEDE; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón en blanco */
+  padding: 10px 20px; /* Relleno del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 18px;
+  display: inline-block;
+}
+
+.bt2 {
+  background-color: #7D53DEDE; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón en blanco */
+  padding: 10px 20px; /* Relleno del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 18px;
+   display: inline-block;
+}
+#contac {
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-top: 120px; /* Ajusta hacia abajo */
+    margin-left: 20px; /* Separación del lado izquierdo */
+}
+.imagen-autoajustada {
+    width: 100%;
+    height: auto;
+    display: block;
+}
