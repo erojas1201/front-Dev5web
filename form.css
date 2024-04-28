@@ -303,3 +303,54 @@ color: #757272;}
     height: auto;
     display: block;
 }
+.container2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Color de fondo para el área fuera del cuadro */
+}
+
+.form-container2 {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff; /* Color de fondo del cuadro */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra del cuadro */
+}
+
+.form-container2 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los campos de entrada y etiquetas */
+.form-container2 label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-container2 input[type="text"],
+.form-container2 input[type="email"],
+.form-container2 input[type="password"],
+.form-container2 input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container2 input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5396de; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container2 input[type="submit"]:hover {
+    background-color: #4378b5; /* Color de fondo del botón al pasar el ratón */
+}
