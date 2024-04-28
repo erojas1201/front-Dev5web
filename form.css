@@ -147,28 +147,6 @@ html {
             display: table;
             clear: both;
         }
-.vertical-titles {
-            display: flex;
-			justify-content: center;
-            height: 20vh; /* Para ocupar toda la altura de la ventana */
-			margin-top: 50px; /* Separación desde la parte superior */
-        }
-.vertical-title {
-            font-size: 24px;
-            margin: 10px; /* Añadir margen entre los títulos */
-        }
-.vertical-title:first-child {
-	font-size: 40px; /* Reducir el tamaño de la letra */
-    margin-right: 400px; /* Separación entre el primer título y el segundo */
-	font-weight: bold;
-    color: #BF38DA	
-}
-.vertical-title:nth-child(2) {
-    margin-left: 20px; /* Separación entre el segundo título y el primero */
-    font-weight: bold;
-    color: #5396de;
-	font-size: 40px; /* Reducir el tamaño de la letra */
-}
 .matrix-table {
     margin-top: 20px; /* Espacio entre el título y la tabla */
     border-collapse: collapse; /* Para fusionar los bordes de las celdas */
@@ -184,68 +162,20 @@ html {
     text-align: center; /* Alinear contenido al centro */
 }
 .matrix2 {
-	margin-left: 1000px; /* Mover la tabla hacia la derecha */
-    margin-top: -220px; /* Espacio entre el título y la tabla */
+    margin-top: 20px; /* Espacio entre el título y la tabla */
     border-collapse: collapse; /* Para fusionar los bordes de las celdas */
     width: auto; /* Ancho automático basado en el contenido */
     color: #845dde;
-	font-size: 15px; /* Reducir el tamaño de la letra */
+    font-size: 15px; /* Reducir el tamaño de la letra */
 }
+
 .matrix2 th,
 .matrix2 td {
     border: 1px solid black; /* Borde de las celdas */
     padding: 8px; /* Espaciado interno de las celdas */
     text-align: center; /* Alinear contenido al centro */
 }
-.reporte-container {
-    padding: 10px; /* Reducir el padding */
-    text-align: center;
 }
-.cuadro2 {
-    background-color: #BF38DA;
-	color: white;
-    border: 1px solid black;
-	border-radius: 5px;
-    padding: 1px;
-	margin-left: -1000px;
-	display: inline-block;
-	font-size: 8px; /* Reducir el tamaño de la letra */
-}
-#vertical {
-            font-size: 48px; /* Reducir el tamaño de la letra */
-			display: flex;
-			justify-content: left;
-			margin-top: 150px; /* Separación desde la parte superior */
-            margin-left: 100px; /* Mover la tabla hacia la derecha */
-		}
-#vertical-1 {
-	        justify-content: right;
-            display: flex;
-			margin-left: 20px; /* Mover la tabla hacia la derecha */
-        }
-#vertical-2 {
-	        justify-content: right;
-            display: flex;
-			margin-left: 10px; /* Mover la tabla hacia la derecha */		
-        }
-#cuadro3 {
-    background-color: #BF38DA;
-	color: white;
-	border-radius: 5px;
-    padding: 1px;
-	margin-left: 10px;
-	font-size: 8px; /* Reducir el tamaño de la letra */
-	}
-#cuadro4 {
-    background-color:;
-	color: black;
-    border: 1px solid black;
-	border-radius: 5px;
-    padding: 1px;
-	margin-left: 10px;
-	display: inline-block;
-	font-size: 8px; /* Reducir el tamaño de la letra */
-	}
 #tituto{
 width: 311px;
 height: 77px;
@@ -303,54 +233,166 @@ color: #757272;}
     height: auto;
     display: block;
 }
-.container2 {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0; /* Color de fondo para el área fuera del cuadro */
-}
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #FFFFFF;
+        padding: 20px;
+    }
 
-.form-container2 {
-    width: 400px;
-    padding: 20px;
-    background-color: #fff; /* Color de fondo del cuadro */
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra del cuadro */
-}
+    .registro-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 200px;
+        border-radius: 1px;  
+    }
 
-.form-container2 h1 {
-    text-align: center;
+    .registro-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #E669D3; /* Color de texto rosa para título */
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #E669D3; /* Color de texto rosa para etiquetas de formulario */
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        color: #E669D3; /* Color de texto rosa para campos de entrada de formulario */
+    }
+
+    .form-group input[type="checkbox"] {
+        margin-right: 5px;
+        color: #000; /* Color de texto negro para checkbox */
+    }
+
+    .form-group input[type="checkbox"] + label {
+        color: #000; /* Color de texto negro para "Acepto los términos y condiciones" */
+    }
+
+    .form-group button {
+        padding: 10px 20px;
+        background-color: #E669D3;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .form-group button.secondary {
+        background-color: #FFFFFF;
+        color: #000; /* Color de texto negro para botones secundarios */
+        margin-left: 10px;
+    }
+
+    .form-group button:hover {
+        background-color: #0056b3;
+    }
+
+    .form-group button.secondary:hover {
+        background-color: #999;
+    }
+.mi-clase {
     margin-bottom: 20px;
+    text-align: right; /* Alinea el contenido a la derecha */
 }
 
-/* Estilos para los campos de entrada y etiquetas */
-.form-container2 label {
-    display: block;
-    margin-bottom: 10px;
+.mi-clase button {
+    padding: 10px 20px;
+    background-color: #E669D3;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px; /* Espacio entre los botones */
 }
 
-.form-container2 input[type="text"],
-.form-container2 input[type="email"],
-.form-container2 input[type="password"],
-.form-container2 input[type="checkbox"] {
-    width: 100%;
-    padding: 10px;
+.mi-clase button.secondary {
+    background-color: #FFFFFF;
+    color: #000; /* Color del texto negro */
+    margin-left: 0; /* Resetea el margen izquierdo */
+}
+
+.mi-clase button:hover {
+    background-color: #0056b3;
+}
+
+.mi-clase button.secondary:hover {
+    background-color: #999;
+}	
+.mi-clase2 {
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    text-align: center; /* Alinea el contenido a la derecha */
 }
-
-.form-container2 input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: #5396de; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
+.mi-clase2 button {
+    padding: 10px 15px;
+    background-color: #E669D3;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 1px; /* Espacio entre los botones */
+}
+.mi-titulo {
+    color: #5396DE; /* Color del texto */
+    font-size: 30px; /* Tamaño de la letra aumentado */
+    text-align: left; /* Centrar el texto */
+    line-height: 1.5; /* Espacio entre líneas para mejorar la legibilidad */
+    font-weight: bold; /* Añadir negrita al texto si es necesario */
+}
+.vertical-title {
+    color: #845dde; /* Color del texto */
+    font-size: 30px; /* Tamaño de la letra aumentado */
+    text-align: center; /* Centrar el texto */
+    line-height: 1.5; /* Espacio entre líneas para mejorar la legibilidad */
+    font-weight: bold; /* Añadir negrita al texto si es necesario */
+}
+.mi-titulo-2 {
+    color: #0A0A0A; /* Color del texto */
+    font-size: 62px; /* Tamaño de la letra */
+    text-align: left; /* Alinear el texto al centro */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+.contacto-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #845dde; /* Color de contorno */
+    border-radius: 5px;
+}
+.contacto-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #845dde; /* Color del texto del formulario */
 }
 
-.form-container2 input[type="submit"]:hover {
-    background-color: #4378b5; /* Color de fondo del botón al pasar el ratón */
+.contacto-form input[type="text"],
+.contacto-form input[type="email"] {
+    width: calc(100% - 22px); /* Ajustar el ancho de los campos de entrada */
+    padding: 10px;
+    border: 1px solid #845dde; /* Color del borde del campo de entrada */
+    border-radius: 3px;
+    box-sizing: border-box; /* Para que el padding no afecte el ancho */
+    margin-bottom: 10px; /* Espacio entre los campos */
 }
+.contacto-form textarea {
+    width: calc(100% - 22px); /* Ajustar el ancho del textarea al 100% del contenedor */
+    padding: 10px;
+    border: 1px solid #845dde; /* Color del borde del campo de comentarios */
+    border-radius: 3px;
+    box-sizing: border-box; /* Para que el padding no afecte el ancho */
+    margin-bottom: 10px; /* Espacio entre los campos */
+}
+

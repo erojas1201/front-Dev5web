@@ -6,84 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css" type="text/css"/>
     <title>Admin</title>
+    <style>
+            body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .pagina-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .top-section, .bottom-section {
+        height: 50px; /* Altura reducida */
+        background-color: #FFFFFF;
+    }
+
+    .center-section {
+        flex: 0.7;
+        display: flex;
+    }
+
+    .left-half, .right-half {
+        flex: 1;
+    }
+
+    .bottom-section {
+        margin-top: 20px; /* Espacio entre las secciones central e inferior */
+    }
+    </style>
 </head>
 <body>
-<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-<div class="menu-container" id="menuContainer">
-    <div class="menu-item">Inicio</div>
-</div>
-<div class="vertical-titles">
-    <div class="vertical-title">Admin Usuarios</div>
-    <div class="vertical-title">Dev5WEB: Perfiles Usuarios</div>
-</div>
-
-<!-- Primera tabla -->
-<table class="matrix-table" width="auto">
-    <tr>
-        <th>Perfil</th>
-        <th>Acceso</th>
-    </tr>
-    <tr>
-        <td>Administrador</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>Visualizador</td>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>Generar Reporte</td>
-        <td>3</td>
-    </tr>
-</table>
-<div class="reporte-container">
-    <div class="cuadro2">
-        <h2>GENERAR REPORTE</h2>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <div class="menu-container" id="menuContainer">
+        <div class="menu-item">Inicio</div>
+    </div>
+    <div class="pagina-container">
+        <div class="top-section">
+            <!-- Contenido de la sección superior -->
+        </div>
+        <div class="center-section">
+            <div class="left-half">
+                <!-- Contenido de la mitad izquierda de la sección central -->
+                
+             <div class="vertical-title">Admin Usuarios</div>
+                
+                <!-- Primera tabla -->
+                <table class="matrix-table" width="auto">
+                    <tr>
+                        <th>Perfil</th>
+                        <th>Acceso</th>
+                    </tr>
+                    <tr>
+                        <td>Administrador</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Visualizador</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Generar Reporte</td>
+                        <td>3</td>
+                    </tr>
+                </table>
+    <div class="mi-clase2">
+        <button type="submit">Generar Reporte</button>
+    </div>
+            </div>
+            <div class="right-half">
+                <!-- Contenido de la mitad derecha de la sección central -->
+                <div class="mi-titulo">Dev5WEB: Perfiles Usuarios</div>
+                <!-- Segunda tabla -->
+                <table class="matrix2" width="auto">
+                    <tr>
+                        <th>NOMBRE USUARIO</th>
+                        <th>CORREO</th>
+                        <th>ID</th>
+                    </tr>
+                    <tr>
+                        <td>Edgar Orlando Rojas Umbacia</td>
+                        <td>eorojasu@poligran.edu.co</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Diana Carolina Aguilera Linares</td>
+                        <td>daaguileral@poligran.edu.co</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Jade Maria Rojas Aguilera</td>
+                        <td>jmrojasa@poligran.edu.co</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Usuario prueba 1</td>
+                        <td>Usuarioprueba1@poligran.edu.co</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Usuario prueba 2</td>
+                        <td>Usuarioprueba2@poligran.edu.co</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Usuario prueba 3</td>
+                        <td>Usuarioprueba3@poligran.edu.co</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+<div class="bottom-section">
+    <!-- Contenido de la sección inferior -->
+   <h2 class="mi-titulo-2">Dev5WEB</h2>
+    <div class="mi-clase">
+        <button type="submit">Editar Usuario</button>
+        <button type="button" class="secondary">Eliminar Usuario</button>
     </div>
 </div>
-<!-- Segunda tabla -->
-<table class="matrix2" width="auto">
-    <tr>
-        <th>NOMBRE USUARIO</th>
-        <th>CORREO</th>
-        <th>ID</th>
-    </tr>
-    <tr>
-        <td>Edgar Orlando Rojas Umbacia</td>
-        <td>eorojasu@poligran.edu.co</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>Diana Carolina Aguilera Linares</td>
-        <td>daaguileral@poligran.edu.co</td>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>Jade Maria Rojas Aguilera</td>
-        <td>jmrojasa@poligran.edu.co</td>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td>Usuario prueba 1</td>
-        <td>Usuarioprueba1@poligran.edu.co</td>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>Usuario prueba 2</td>
-        <td>Usuarioprueba2@poligran.edu.co</td>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>Usuario prueba 3</td>
-        <td>Usuarioprueba3@poligran.edu.co</td>
-        <td>2</td>
-    </tr>
-</table>
-</table>
-    <div id="vertical">Dev5WEB</div>
-	<div id="vertical-1">
-    <div id="cuadro3"><h2>Editar Usuario</h2></div>
-    <div id="vertical-2">
-	<div id="cuadro4"><h2>Eliminar Usuario</h2></div>
+
+    </div>
+    <script>
+        function toggleMenu() {
+            var menuContainer = document.getElementById("menuContainer");
+            if (menuContainer.style.display === "block") {
+                menuContainer.style.display = "none";
+            } else {
+                menuContainer.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>

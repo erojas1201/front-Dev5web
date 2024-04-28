@@ -6,50 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css" type="text/css"/>
     <title>Sesion</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .pagina-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .top-section, .bottom-section {
+        height: 50px; /* Altura reducida */
+        background-color: #FFFFFF;
+    }
+
+    .center-section {
+        flex: 1;
+        display: flex;
+    }
+
+    .left-half, .right-half {
+        flex: 1;
+    }
+
+    .bottom-section {
+        margin-top: 10px; /* Espacio entre las secciones central e inferior */
+    }
+</style>
+
 </head>
 <body>
-<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-<div class="menu-container" id="menuContainer">
-    <div class="menu-item">Inicio</div>
-</div>
-<div class="vertical-titles">
-    <div class="vertical-title">Dev5WEB: donde la creatividad y la experiencia se unen para impulsar el desarrollo web.</div>
-    <div class="vertical-title">Crear una cuenta</div>
-</div>
-     <div class="container2">
-        <div class="form-container2">
-            <form action="procesar_formulario.php" method="post">
-                <!-- Aquí va el contenido del formulario -->
-				    <form action="procesar_formulario.php" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required autofocus><br><br>
-        
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required><br><br>
-        
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" name="correo" required><br><br>
-        
-        <label for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" name="contrasena" required><br><br>
-        
-        <label for="repetir_contrasena">Repetir Contraseña:</label>
-        <input type="password" id="repetir_contrasena" name="repetir_contrasena" required><br><br>
-        
-        <input type="checkbox" id="terminos" name="terminos" required>
-        <label for="terminos">Acepto los términos y condiciones</label><br><br>
-        
-        <input type="submit" value="Crear Sesión">
-    </form>
-            </form>
+
+
+
+	<body>
+    <div class="pagina-container">
+        <div class="top-section">
+            <!-- Contenido de la sección superior -->
+			<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+<div class="menu-container" id="menuContainer"><div class="menu-item">Inicio</div></div>
+            <h2>Sección Superior</h2>
+        </div>
+        <div class="center-section">
+            <div class="left-half">
+                <!-- Contenido de la mitad izquierda de la sección central -->
+					<div class="container-img">
+        <div class="image-container">
+            <img src="C:\front end\images\inicio-sesion.jpg" alt="Inicio de Sesión">
         </div>
     </div>
-
-</table>
-    <img src="C:\front end\images\inicio-sesion.jpg" alt="inicio-sesion">
-	<div id="vertical-1">
-    <div id="cuadro3"><h2>Editar Usuario</h2></div>
-    <div id="vertical-2">
-	<div id="cuadro4"><h2>Eliminar Usuario</h2></div>
+    </div>
+            <div class="right-half">
+                <!-- Contenido de la mitad derecha de la sección central -->
+				    <div class="registro-container">
+        <h2>Crea Una Cuenta</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmar-contrasena">Repetir Contraseña:</label>
+                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto los términos y condiciones</label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Registrarse</button>
+                <button type="button" class="secondary">Iniciar Sesión</button>
+            </div>
+        </form>
+    </div>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <!-- Contenido de la sección inferior -->
+			<img src="C:\front end\images\portafolio.jpg" class="imagen-autoajustada">
+        </div>
+    </div>
+</body>
 </body>
 </html>
