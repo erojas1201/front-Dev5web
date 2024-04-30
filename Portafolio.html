@@ -9,6 +9,13 @@
 </head>
 <body>
 <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <div class="menu">
+	    <div class="menu-item"><a href="Index.html">Inicio</a></div>
+        <div class="menu-item"><a href="Equipo.html">Equipo</a></div>
+        <div class="menu-item"><a href="Servicios.html">Servicios</a></div>
+        <div class="menu-item"><a href="Contacto.html">Contacto</a></div>
+        <div class="menu-item"><a href="Testimonio.html">Testimonio</a></div>
+    </div>
 <div class="mi-contenedor">
     <div id="titulo-1">Dev5WEB</div>
     <div id="titulo-2">Aplicaciones desarrolladas y en producción</div>
@@ -62,5 +69,12 @@
         </div>
     </div>
 </div>
+<script>
+    // Función para alternar la clase activa del menú
+    function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+</script>
 </body>
 </html>

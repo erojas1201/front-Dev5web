@@ -9,7 +9,13 @@
 </head>
 <body>
 <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-</div>
+    <div class="menu">
+	    <div class="menu-item"><a href="Index.html">Inicio</a></div>
+        <div class="menu-item"><a href="Equipo.html">Equipo</a></div>
+        <div class="menu-item"><a href="Contacto.html">Contacto</a></div>
+        <div class="menu-item"><a href="Portafolio.html">Portafolio</a></div>
+        <div class="menu-item"><a href="Testimonio.html">Testimonio</a></div>
+    </div>
 <div id="titulo1"><h2>Dev5WEB</h2></div>
 <div id="titulo2">
     <font size="6">Somos especialistas en:</font>
@@ -64,5 +70,12 @@ velocidad de carga, la capacidad de respuesta y la eficiencia de los sitios web 
     </div>
 </div>
 <img src="C:\front end\images\portafolio.jpg" class="imagen-autoajustada">
+<script>
+    // Función para alternar la clase activa del menú
+    function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+</script>
 </body>
 </html>

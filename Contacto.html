@@ -30,7 +30,14 @@
 <body>
     <div class="arriba">
 <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-	    <div id="titulo">Dev5WEB</div>
+    <div class="menu">
+	    <div class="menu-item"><a href="Index.html">Inicio</a></div>
+        <div class="menu-item"><a href="Equipo.html">Equipo</a></div>
+        <div class="menu-item"><a href="Servicios.html">Servicios</a></div>
+        <div class="menu-item"><a href="Portafolio.html">Portafolio</a></div>
+        <div class="menu-item"><a href="Testimonio.html">Testimonio</a></div>
+    </div>
+	<div id="titulo">Dev5WEB</div>
 <div class="content-center">
     <div class="contact-info">
         <img src="C:/front end/Images/Frame (3).png" alt="Ubicación"> MI UBICACION
@@ -66,5 +73,12 @@
     </form>
 </div>
 </div>
+<script>
+    // Función para alternar la clase activa del menú
+    function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+</script>
 </body>
 </html>

@@ -39,8 +39,14 @@
     </style>
 </head>
 <body>
-    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-    <div class="menu-container" id="menuContainer">
+<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <div class="menu">
+	    <div class="menu-item"><a href="Index.html">Inicio</a></div>
+        <div class="menu-item"><a href="Equipo.html">Equipo</a></div>
+        <div class="menu-item"><a href="Servicios.html">Servicios</a></div>
+        <div class="menu-item"><a href="Portafolio.html">Portafolio</a></div>
+        <div class="menu-item"><a href="Testimonio.html">Testimonio</a></div>
+		<div class="menu-item"><a href="Contacto.html">Contacto</a></div>
     </div>
     <div class="pagina-container">
         <div class="top-section">
@@ -128,15 +134,12 @@
 </div>
 
     </div>
-    <script>
-        function toggleMenu() {
-            var menuContainer = document.getElementById("menuContainer");
-            if (menuContainer.style.display === "block") {
-                menuContainer.style.display = "none";
-            } else {
-                menuContainer.style.display = "block";
-            }
-        }
-    </script>
+<script>
+    // Función para alternar la clase activa del menú
+    function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+</script>
 </body>
 </html>

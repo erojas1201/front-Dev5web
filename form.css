@@ -14,47 +14,49 @@ html {
     padding: 0;
     overflow-x: hidden;
 }
-.menu-icon {
+        #body-index {
+            /* Establecer la imagen de fondo */
+            background-image: url('\images\shared.png'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+            background-size: cover; /* Para asegurar que la imagen de fondo cubra toda la página */
+            background-position: center; /* Para centrar la imagen de fondo */
+            margin: 0; /* Eliminar el margen predeterminado del cuerpo */
+            padding: 0; /* Eliminar el relleno predeterminado del cuerpo */
+        }
+
+ .menu-icon {
             display: block;
             position: absolute;
             top: 10px;
             right: 250px;
             cursor: pointer;
-			color: 	#C9A4D6;
+			color: 	#c70079;
 			font-size: 30px;
         }
-.menu-container {
-    display: flex;
-    justify-content: center; /* Centra los elementos horizontalmente */
-    margin-top: 0px; /* Espacio superior según sea necesario */
-}
 
-.menu-a {
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    display: flex;
-    padding: 10px;
-}
+        .menu {
+            display: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color:#f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
 
-.menu-item {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: black;
-    cursor: pointer;
-    margin-right: 10px;
-    padding: 10px 20px;
-    text-align: center;
-}
+        .menu.active {
+            display: block;
+        }
 
-.menu-item:last-child {
-    margin-right: 0;
-}
+        .menu-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
 
-.menu-item a {
-    color: #333;
-    text-decoration: none;
-}
+        .menu-item a {
+            text-decoration: none;
+            color: #333;
+        }		
 #titulo {
     font-size: 10em;
     text-align: left;
@@ -78,7 +80,7 @@ html {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 20px;
-    color: #845dde;
+    color: #FFFFFF;
     font-weight: bold;
 }
 #redes-sociales {
@@ -421,6 +423,43 @@ color: #757272;
 	margin: 1; /* Ajustar el margen horizontal */
 	line-height: 3; /* Reducir el espacio vertical entre líneas */
 }
+.menu-icon-custom {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: #D89ECE;
+            font-size: 40px;
+        }
+
+        .menu-container-custom {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .menu-a-custom {
+            background-color: #;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            display: flex;
+            padding: 10px;
+        }
+
+        .menu-item-custom {
+            background-color: white;
+            border: 1px solid #845DDE;
+            border-radius: 5px;
+            color: #0A0A0A;
+            cursor: pointer;
+            margin-right: 5px;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .menu-item-custom:last-child {
+            margin-right: 0;
+        }
 
 
 

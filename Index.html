@@ -6,19 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css" type="text/css"/>
     <title>Index</title>
+    <style>
+        #body-index {
+            /* Establecer la imagen de fondo */
+            background-image: url('images/shared.png'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+            background-size: cover; /* Para asegurar que la imagen de fondo cubra toda la página */
+            background-position: center; /* Para centrar la imagen de fondo */
+            margin: 0; /* Eliminar el margen predeterminado del cuerpo */
+            padding: 0; /* Eliminar el relleno predeterminado del cuerpo */
+        }
+    </style>
 </head>
-<body>
-<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-<div class="menu-container">
-    <div class="menu-a">
-        <div class="menu-item">Admin</div>
-        <div class="menu-item">Equipo</div>
-        <div class="menu-item">Servicios</div>
-        <div class="menu-item">Portafolio</div>
-        <div class="menu-item">Testimonios</div>
-        <div class="menu-item">Contacto</div>
+<body id="body-index">
+    <div class="menu-icon-custom" onclick="toggleMenu()">&#9776;</div>
+    <div class="menu-container-custom">
+        <div class="menu-a-custom">
+            <div class="menu-item-custom">Admin</div>
+            <div class="menu-item-custom">Equipo</div>
+            <div class="menu-item-custom">Servicios</div>
+            <div class="menu-item-custom">Portafolio</div>
+            <div class="menu-item-custom">Testimonios</div>
+            <div class="menu-item-custom">Contacto</div>
+        </div>
     </div>
-</div>
+    <script>
+        function toggleMenu() {
+            var menuContainer = document.querySelector('.menu-container-custom');
+            menuContainer.classList.toggle('show-menu');
+        }
+    </script>
 <div id="titulo">
     <font size="10">Dev5WEB</font>
 </div>
@@ -39,7 +55,7 @@
                 <div class="form-group">
                 <input type="password" name="password" class="form-control" placeholder="Contraseña" autofocus>
                 </div>
-				<div class="form-group">
+                <div class="form-group">
                 <button type="submit">Registrarse</button>
                 <button type="button" class="secondary">Iniciar Sesión</button>
             </div>

@@ -9,6 +9,13 @@
 </head>
 <body>
 <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <div class="menu">
+	    <div class="menu-item"><a href="Index.html">Inicio</a></div>
+        <div class="menu-item"><a href="Contacto.html">Contacto</a></div>
+        <div class="menu-item"><a href="Servicios.html">Servicios</a></div>
+        <div class="menu-item"><a href="Portafolio.html">Portafolio</a></div>
+        <div class="menu-item"><a href="Testimonio.html">Testimonio</a></div>
+    </div>
 <div id="titulo">Dev5WEB</div>
 <img src="Images/Group 8.png" width="314" height="245"style= "margin-center: 5px; margin-top:10px;"/>
 <img src="Images/Edgar.png" width="280" height="120" style="margin-top: 17px; margin-left:350px;"/>
@@ -47,5 +54,12 @@ Contáctenos:
         <a href="https://www.facebook.com/tucuenta"><img src="C:\front end\images\facebook.gif" alt="Facebook"></a>
         <a href="https://www.tiktok.com/@tucuenta"><img src="C:\front end\images\tiktok.gif" alt="Tiktok"></a>
     </div>
+	<script>
+    // Función para alternar la clase activa del menú
+    function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+</script>
 </body>
 </html>
